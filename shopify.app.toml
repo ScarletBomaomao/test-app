@@ -3,7 +3,7 @@
 client_id = "e69919a78b216abd0b1c174293d8f904"
 name = "test-app"
 handle = "test-app-9575"
-application_url = "https://advances-emotional-calling-threats.trycloudflare.com"
+application_url = "https://cooler-outlined-orientation-holmes.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://advances-emotional-calling-threats.trycloudflare.com/auth/callback",
-  "https://advances-emotional-calling-threats.trycloudflare.com/auth/shopify/callback",
-  "https://advances-emotional-calling-threats.trycloudflare.com/api/auth/callback"
+  "https://cooler-outlined-orientation-holmes.trycloudflare.com/auth/callback",
+  "https://cooler-outlined-orientation-holmes.trycloudflare.com/auth/shopify/callback",
+  "https://cooler-outlined-orientation-holmes.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

@@ -110,6 +110,7 @@ export default function Index() {
 
   return (
     <Page>
+      随便写点什么，看看
       <TitleBar title="Remix app template">
         <button variant="primary" onClick={generateProduct}>
           Generate a product
