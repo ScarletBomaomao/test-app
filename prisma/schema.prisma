@@ -5,12 +5,9 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// Note that some adapters may set a maximum length for the String type by default, please ensure your strings are long
-// enough when changing adapters.
-// See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
 datasource db {
-  provider = "sqlite"
-  url      = "file:dev.sqlite"
+  provider = "sqlite" //指定数据库类型为 SQLite,轻量级、基于文件的数据库
+  url      = "file:dev.sqlite" //设置数据库的URL，dev:sqlite 是相对于执行Prisma客户端的位置
 }
 
 model Session {
@@ -22,4 +19,16 @@ model Session {
   expires     DateTime?
   accessToken String
   userId      BigInt?
+}
+
+model QRCode {
+  id               Int      @id @default(autoincrement())
+  title            String
+  shop             String
+  productId        String
+  productHandle    String
+  productVariantId String
+  destination      String
+  scans            Int      @default(0)
+  createdAt        DateTime @default(now())
 }
